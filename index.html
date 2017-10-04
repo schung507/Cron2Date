@@ -4,28 +4,7 @@
 
 <form action="/calculate-crons" method="post">
   
-  <textarea rows="20" cols="150" name="json">
-  {
-      "start_date": "2016-02-01T08:00:00.000Z",
-      "end_date": "2016-02-28T08:00:00.000Z",
-      "frequencies": [
-        {
-          "name": "Monthly",
-          "crons": ["0 0 0 25 * *"]
-        },
-        {
-          "name": "BiWeekly",
-          "crons": ["0 0 0 20 * *", "0 0 0 10 * *"]
-        },
-        {
-          "name": "Weekly",
-          "crons": ["0 0 0 * * 5"]
-        },
-        {
-          "name": "Quarterly",
-          "crons": ["0 0 0 25 3 *", "0 0 0 27 6 *", "0 0 0 30 9 *", "0 0 0 22 12 *", "0 0 0 25 3 *"]
-        }]
-  }
+  <textarea rows="20" cols="150" name="json">Enter appropriate JSON
   </textarea>
   <br />
   <input type="submit" value="Submit">
