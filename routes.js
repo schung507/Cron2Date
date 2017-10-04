@@ -34,16 +34,16 @@ module.exports = function (app) {
 
                     while (true) {
                         try {
-                            var obj = interval.next();
-                            response[frequencyName].push(new Date(obj.value.toString()).toJSON());
+                            var date = interval.next();
+                            response[frequencyName].push(date.value.toJSON());
                         } catch (e) {
                             break;
                         }
                     }
 
-                    } catch (err) {
-                        console.log("err: " + err);
-                    }
+                } catch (err) {
+                    console.log("err: " + err);
+                }
             })
         })
 
