@@ -8,7 +8,7 @@ npm install
 ```
 npm start 
 ```
-Open browser to https://localhost:3000.
+Open browser to localhost:3000.
 
 Fill input box with appropriate json and submit.
 
