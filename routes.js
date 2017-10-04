@@ -10,7 +10,7 @@ module.exports = function (app) {
         var json = JSON.parse(req.body.json);
         //invalid input
         if(!('start_date' in json) || !('end_date' in json)  || !('frequencies' in json)) 
-        return res.status(404).end('<h1>404 Not Found</h1>');
+            return res.status(404).end('<h1>404 Not Found</h1>');
 
         var startDate = json.start_date;
         var endDate = json.end_date;
