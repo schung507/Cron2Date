@@ -40,5 +40,14 @@ describe('POST /calculate-crons', function() {
                 done();
         });
     });
-
+    it('should return 404', function(done) {
+        chai.request(server)
+            .post('/calculate-crons')
+            .type('form')
+            .send({'json' : JSON.stringify(constants.INPUT4)})
+            .end(function(err, res){
+                res.should.have.status(404);
+                done();
+        });
+    });
 });

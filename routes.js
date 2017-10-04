@@ -42,7 +42,7 @@ module.exports = function (app) {
                     }
 
                 } catch (err) {
-                    console.log("err: " + err);
+                    return res.status(404).end('<h1>404 Not Found</h1>');
                 }
             })
         })
